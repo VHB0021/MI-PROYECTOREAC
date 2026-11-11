@@ -1,0 +1,17 @@
+/* Diseño adaptable: formulario y mapa en la misma fila en pantallas amplias */
+.tp-contacto { max-width: 1160px; margin: 24px auto 48px; padding: 25px; box-sizing: border-box; background: #fbfaff; border: 1px solid #e9ddff; border-radius: 18px; box-shadow: 0 8px 30px rgba(77,38,119,.09); color: #333; text-align: left; }
+.tp-contacto h2 { margin: 0 0 7px; color: #6f36b6; font-size: 1.7rem; }
+.tp-contacto-presentacion p { margin: 0 0 24px; color: #555; }
+.tp-contacto-columnas { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 28px; align-items: start; }
+.tp-formulario { display: flex; flex-direction: column; gap: 9px; }
+.tp-formulario label { font-weight: 600; font-size: .95rem; }
+.tp-formulario input, .tp-formulario textarea { font: inherit; padding: 12px; border: 1px solid #cdbce6; border-radius: 9px; background: white; width: 100%; box-sizing: border-box; color: #333; }
+.tp-formulario input:focus, .tp-formulario textarea:focus { outline: 2px solid #9160d2; outline-offset: 1px; }
+.tp-formulario button { font: inherit; padding: 13px; background: #8352c4; color: white; border: 0; border-radius: 9px; font-weight: 600; cursor: pointer; margin-top: 7px; }
+.tp-formulario button:disabled { opacity: .7; cursor: wait; }
+.tp-estado { font-weight: 600; font-size: .95rem; margin: 4px 0; }
+.tp-estado-ok { color: #176b3a; } .tp-estado-error { color: #ad2542; }
+.tp-mapa-panel h3 { font-size: 1.18rem; margin: 0 0 7px; color: #6f36b6; }
+.tp-mapa-panel p { margin: 0 0 15px; line-height: 1.5; }
+.tp-mapa-panel a { display: inline-block; margin-top: 10px; color: #6934ab; text-decoration: underline; }
+@media(max-width: 700px) { .tp-contacto { padding: 16px; margin: 18px 12px 36px; } .tp-contacto-columnas { grid-template-columns: 1fr; gap: 22px; } }
